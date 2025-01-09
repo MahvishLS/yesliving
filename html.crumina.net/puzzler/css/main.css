@@ -85,7 +85,14 @@
 -------------------------------------------------------------------*/
 /*------------- #PLUGINS --------------*/
 /*------------- #SELECT2 --------------*/
-
+.text-black{
+  color: var(--bg-black);
+}
+.logo{
+  height: 40px;
+  width: auto;
+  margin-bottom: 0;
+}
 .top-subtitle{
   width: 70%;
   text-transform: uppercase;
@@ -120,7 +127,8 @@
   align-items: center;
   justify-content: center;
   min-width: 90%;
-  background: var(--primary-accent-color);
+  background: var(--dark-themes);
+  color: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -165,6 +173,9 @@
   }
   .amenities-details li{
     font-size: 20px;
+  }
+  .main-content-wrapper{
+    padding-top: 100px;
   }
 }
 
@@ -3546,7 +3557,7 @@ img.fr-shadow,
   background-clip: padding-box;
   background: #f5f5f5;
   padding: 10px;
-  font-family: "Courier New", Courier, monospace; }
+  font-family: "IBM Plex Sans", sans-serif }
 
 .fr-view .fr-class-transparency {
   opacity: 0.5; }
@@ -3890,8 +3901,8 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
 /*------------- #ROOT --------------*/
 :root {
   --font-family-body: "IBM Plex Sans", sans-serif;
-  --font-family-logo: "Condition Regular", sans-serif;
-  --primary-accent-color: #F8B7DB;
+  --font-family-logo: "IBM Plex Sans", sans-serif;
+  --primary-accent-color: #c0c8d3;
   --secondary-accent-color: #F8B7DB;
   --body-font-color: #EB399A;
   --white-color: #fff;
@@ -3903,7 +3914,7 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
   --red-themes: #F8B7DB;
   --dark-themes: #EB399A;
   --blue-themes: #159ce4;
-  --yellow-themes: #F8B7DB;
+  --yellow-themes: #c0c8d3;
   --grey-dark-theme: #c0c8d3;
   --bg-black: #121214;
   --link-color: #EB399A;
@@ -3923,7 +3934,7 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
   --button--green: #F8B7DB;
   --button--grey: #d6dce5;
   --button--red: #F8B7DB;
-  --button--primary: #F8B7DB;
+  --button--primary: #fff;
   --button--grey-dark: #c0c8d3;
   --button--blue: #159ce4;
   --button--blue-dark: #08469c;
@@ -5386,7 +5397,7 @@ label {
     padding: 15px 10px;
     display: inline-block; }
   .login-menu ul li a {
-    color: var(--white-color); }
+    color: var(--button--dark); }
 
 .user-online {
   position: relative; }
@@ -5493,7 +5504,7 @@ label {
     .header-content-wrapper .site-logo {
       width: 100%;
       text-align: center;
-      margin-bottom: 15px; }
+      margin-bottom: 0; }
       .header-content-wrapper .site-logo .puzzle-icon {
         margin: 0 auto; }
   .login-menu ul:not([class]) {
@@ -7644,16 +7655,15 @@ a img.aligncenter {
   .crumina-heading.heading--with-decoration .heading-title:before {
     content: "";
     font-size: inherit;
-    background-color: var(--primary-accent-color);
+    background-color: var(--body-font-color);
     display: block;
     position: relative;
     margin-bottom: .47em; }
   .crumina-heading.decoration--dark-theme .heading-title:before {
-    background-color: var(--dark-themes); }
+    background-color: var(--button--grey-dark); }
   .crumina-heading.decoration--yellow-theme .heading-title:before {
     background-color: var(--yellow-themes); }
-  .crumina-heading.decoration--red-theme .heading-title:before {
-    background-color: var(--red-themes); }
+
   .crumina-heading.decoration--blue-theme .heading-title:before {
     background-color: var(--blue-themes); }
   .crumina-heading.heading--inline {
