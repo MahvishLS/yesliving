@@ -119,8 +119,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 95%;
-  background: #ffffff;
+  min-width: 90%;
+  background: var(--primary-accent-color);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -144,6 +144,12 @@
 .room-title{
   margin: 10px 100px; 
 }
+/* 
+@media (min-width: 900px) {
+  .room-feature{
+    margin-right: 30px;
+  }
+} */
 
 @media (max-width: 768px){
   
@@ -153,11 +159,17 @@
   .room-title{
     margin: 10px auto ;
   }
+  .amenities-box{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .amenities-details li{
+    font-size: 20px;
+  }
 }
 
 .amenities-box {
-  width: 300px;
-  height: 200px;
+  min-height: 200px;
   perspective: 1000px;
   position: relative;
   margin-top: 35px;
@@ -3877,23 +3889,24 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
 /*------------- #VARIABLES --------------*/
 /*------------- #ROOT --------------*/
 :root {
-  --font-family-body: "Montserrat", serif;
-  --font-family-logo: "Montserrat", serif;
-  --primary-accent-color: #022762;
-  --secondary-accent-color: #FB4219;
-  --body-font-color: #121214;
+  --font-family-body: "IBM Plex Sans", sans-serif;
+  --font-family-logo: "Condition Regular", sans-serif;
+  --primary-accent-color: #F8B7DB;
+  --secondary-accent-color: #F8B7DB;
+  --body-font-color: #EB399A;
   --white-color: #fff;
   --border-grey-color: #d6dce5;
-  --heading-color: #0943a0;
+  --heading-color: #EB399A;
   --icon-color: #9095a0;
   --grey-color: #898e9a;
   --light-grey: #eff2f7;
-  --red-themes: #fd4e26;
-  --dark-themes: #f4c024;  
+  --red-themes: #F8B7DB;
+  --dark-themes: #EB399A;
   --blue-themes: #159ce4;
-  --yellow-themes: #f9bc35;
+  --yellow-themes: #F8B7DB;
   --grey-dark-theme: #c0c8d3;
-  --link-color: #121214;
+  --bg-black: #121214;
+  --link-color: #EB399A;
   --h1-font-size: 55px;
   --h2-font-size: 36px;
   --h3-font-size: 30px;
@@ -3902,25 +3915,25 @@ span.fr-img-caption.fr-view.fr-dii.fr-fir {
   --h6-font-size: 16px;
   --h-font-weight: 700;
   --h-margin: 0.53em 0;
-  --h1-font-family: "Oleo Script", serif; 
-  --heading-font-family: "Montserrat", serif;
-  --button--dark: #121214;
+  --h1-font-family: "IBM Plex Sans", sans-serif; 
+  --heading-font-family: "IBM Plex Sans", sans-serif;
+  --button--dark: #EB399A;
   --button--white: #ffffff;
-  --button--yellow: #f9bc35;
-  --button--green: #01bb86;
+  --button--yellow: #F8B7DB;
+  --button--green: #F8B7DB;
   --button--grey: #d6dce5;
-  --button--red: #fd4e26;
-  --button--primary: #00E5B0;
+  --button--red: #F8B7DB;
+  --button--primary: #F8B7DB;
   --button--grey-dark: #c0c8d3;
   --button--blue: #159ce4;
   --button--blue-dark: #08469c;
   --placeholder-color: #4d525b;
   --placeholder-active-color: #c0c8d3;
-  --input-dark-bg: #232427;
+  --input-dark-bg: #EB399A;
   --checkbox-blue-dark: #08469c;
-  --checkbox-green: #01bb86;
+  --checkbox-green: #F8B7DB;
   --checkbox-red: #fd4e26;
-  --checkbox-yellow: #f9bc35;
+  --checkbox-yellow: #F8B7DB;
   --checkbox-blue: #159ce4; }
 
 /*------------- #GLOBAL STYLES --------------*/
