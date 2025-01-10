@@ -198,6 +198,13 @@
   transform: rotateY(180deg);
 }
 
+.amenities-box img{
+  height: 80px;
+  width: 80px;
+  /* object-fit: cover; */
+  padding-bottom: 10px;
+}
+
 .info-box-front,
 .info-box-back {
   width: 100%;
@@ -231,6 +238,28 @@
   margin: 0;
   padding: 3px 10px;
 }
+
+.livingexp{
+  height: 180px;
+  width: 200px;
+  padding-bottom: 20px;
+  object-fit: cover;
+}
+
+.livingexp1{
+  height: 210px;
+  width: 200px;
+  padding-top: 30px;
+  object-fit: cover;
+
+}
+
+.room{
+  height: 100px;
+  width: 100px;
+  padding-bottom: 10px;
+}
+/* custom css end */
 
 .select2-container {
   -webkit-box-sizing: border-box;
